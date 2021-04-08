@@ -131,8 +131,8 @@ while True:
     print("3. Insert in tail")
     print("4. Count element in the List")
     print("5. Enter Item to be deleted")
-    print("6. List of element in forward and reverse")
-    print("7. Display")
+    print("6. Display")
+    print("7. List of element in forward and reverse")
     print("8. Display min")
     print("9. Display max")
     print("10. Exit")
@@ -157,13 +157,13 @@ while True:
         number = int(input("Enter number you want to delete : "))
         myLList.delete(number)
     elif choice == 6:
+        print("List of element(s) is :")
+        myLList.printList()
+    elif choice == 7:
         print("Forward : ")
         myLList.printList()
         print("\nReverse : ")
         myLList.reverse()
-    elif choice == 7:
-        print("List of element(s) is :")
-        myLList.printList()
     elif choice == 8:
         print("The node with minimum value is : ", myLList.min_node())
     elif choice == 9:

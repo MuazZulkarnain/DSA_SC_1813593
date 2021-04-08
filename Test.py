@@ -146,23 +146,23 @@ while True:
         print("The linked list has been created.")
         print("")
     elif choice == 2:
-        item = int(input("Enter number to add to the list: "))
+        item = int(input("Enter number to add to the beginning list: "))
         myLList.add(item)
     elif choice == 3:
-        item = int(input("Enter number to add to the list: "))
+        item = int(input("Enter number to add to the tail list: "))
         myLList.addtail(item)
     elif choice == 4:
-        print("Number of element(s) in the linked list: ", myLList.count())
+        print("Number of element(s) in the linked list : ", myLList.count())
     elif choice == 5:
-        number = int(input("Enter number you want to detele: "))
+        number = int(input("Enter number you want to delete : "))
         myLList.delete(number)
     elif choice == 6:
-        print("Forward: ")
+        print("Forward : ")
         myLList.printList()
-        print("\nReverse: ")
+        print("\nReverse : ")
         myLList.reverse()
     elif choice == 7:
-        print("List of element(s):")
+        print("List of element(s) is :")
         myLList.printList()
     elif choice == 8:
         print("The node with minimum value is : ", myLList.min_node())

@@ -111,9 +111,8 @@ class Buffer:
         print('List is empty!')
 
     def ReplaceChar(self, newchar):
-        if not self.IsEmpty() and self.GetCurrentLine() != 0:
-            self.List.getCurrent()[self.i] = newchar
-            return self.List
+        if not self.IsEmpty() and self.GetCurrentLine() !=0:
+            return self.List.getCurrent().remove(self.i)
         print('List/Line is empty!')
 
     def ClearFile(self):

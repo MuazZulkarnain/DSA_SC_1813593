@@ -1,4 +1,4 @@
-from Text_Editor_Main import Buffer
+from Main import Buffer
 
 def Option(editor):
     while True:
